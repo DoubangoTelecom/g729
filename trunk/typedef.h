@@ -42,3 +42,9 @@ typedef int   Flag;
 #else
 #	define G7129_INLINE	
 #endif
+
+#if ANDROID || TARGET_OS_EMBEDDED || defined(_WIN32_WCE)
+#	define G729_ARM 1
+#else
+#	define G729_ARM 0
+#endif

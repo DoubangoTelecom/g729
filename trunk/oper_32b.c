@@ -107,7 +107,7 @@ Word32 L_Comp(Word16 hi, Word16 lo)
 
 G7129_INLINE Word32 Mpy_32(Word16 hi1, Word16 lo1, Word16 hi2, Word16 lo2)
 {
-#if ANDROID // TODO: Check
+#if G729_ARM
 	register Word32 product32;
 	register Word32 L_sum;
 	register Word32 L_product, result;
@@ -192,7 +192,7 @@ G7129_INLINE Word32 Mpy_32(Word16 hi1, Word16 lo1, Word16 hi2, Word16 lo2)
 
 G7129_INLINE Word32 Mpy_32_16(Word16 hi, Word16 lo, Word16 n)
 {
-#if ANDROID // TODO: check
+#if G729_ARM
 	register Word32 ra = hi;
     register Word32 rb = lo;
     register Word32 rc = n;

@@ -124,7 +124,7 @@ Word16 sature(Word32 L_var1)
 
 G7129_INLINE Word16 add(Word16 var1,Word16 var2)
   {
-#if ANDROID
+#if G729_ARM
 	  register Word32 L_var_out;
 	  register Word32 L_var_aux;
 	  register Word32 ra = (Word32)var1;
@@ -187,7 +187,7 @@ G7129_INLINE Word16 add(Word16 var1,Word16 var2)
 
 G7129_INLINE Word16 sub(Word16 var1,Word16 var2)
   {
-#if ANDROID
+#if G729_ARM
 	  register Word32 L_var_out;
         register Word32 L_var_aux;
         register Word32 ra = (Word32)var1;
@@ -426,7 +426,7 @@ Word16 shr(Word16 var1,Word16 var2)
 
 G7129_INLINE Word16 mult(Word16 var1, Word16 var2)
   {
-#if ANDROID
+#if G729_ARM
 	  register Word32 L_var_out;
 	  register Word32 ra = (Word32)var1;
 	  register Word32 rb = (Word32)var2;
@@ -493,7 +493,7 @@ G7129_INLINE Word16 mult(Word16 var1, Word16 var2)
 
 G7129_INLINE Word32 L_mult(Word16 var1,Word16 var2)
   {
-#if ANDROID
+#if G729_ARM
 	  register Word32 L_var_out;
 	  register Word32 ra = (Word32)var1;
 	  register Word32 rb = (Word32)var2;
@@ -669,7 +669,7 @@ Word16 extract_l(Word32 L_var1)
 
 G7129_INLINE Word16 round(Word32 L_var1)
   {
-#if ANDROID // TODO: check
+#if G729_ARM
 	  register Word32 L_var_out;
 	  register Word32 ra = (Word32)L_var1;
 	  register Word32 rb = (Word32)0x00008000L;
@@ -731,7 +731,7 @@ G7129_INLINE Word16 round(Word32 L_var1)
 
 G7129_INLINE Word32 L_mac(Word32 L_var3, Word16 var1, Word16 var2)
   {
-#if ANDROID
+#if G729_ARM
 	  register Word32 L_var_out;
 	  register Word32 ra = (Word32)var1;
 	  register Word32 rb = (Word32)var2;
@@ -796,7 +796,7 @@ G7129_INLINE Word32 L_mac(Word32 L_var3, Word16 var1, Word16 var2)
 
 G7129_INLINE Word32 L_msu(Word32 L_var3, Word16 var1, Word16 var2)
   {
-#if ANDROID
+#if G729_ARM
 	  register Word32 L_var_out;
 	  register Word32 ra = (Word32)var1;
 	  register Word32 rb = (Word32)var2;
@@ -961,7 +961,7 @@ Word32 L_msuNs(Word32 L_var3, Word16 var1, Word16 var2)
 
 G7129_INLINE Word32 L_add(Word32 L_var1, Word32 L_var2)
   {
-#if ANDROID
+#if G729_ARM
 	  register Word32 L_var_out;
 	  register Word32 ra = L_var1;
 	  register Word32 rb = L_var2;
@@ -1024,7 +1024,7 @@ G7129_INLINE Word32 L_add(Word32 L_var1, Word32 L_var2)
 
 G7129_INLINE Word32 L_sub(Word32 L_var1, Word32 L_var2)
   {
-#if ANDROID
+#if G729_ARM
 	  register Word32 L_var_out;
 	  register Word32 ra = L_var1;
 	  register Word32 rb = L_var2;
@@ -1914,7 +1914,7 @@ Word32 L_sat (Word32 L_var1)
 
 Word16 norm_s(Word16 var1)
   {
-#if ANDROID
+#if G729_ARM
 	  register Word32 var_out = 0;
 	  register Word32 ra = var1 << 16;
 	  if (ra){
@@ -2082,7 +2082,7 @@ Word16 div_s(Word16 var1, Word16 var2)
 
 G7129_INLINE Word16 norm_l(Word32 L_var1)
   {
-#if ANDROID
+#if G729_ARM
 	  register Word32 var_out = 0;
 	  register Word32 ra = L_var1;
 	  if (L_var1)
