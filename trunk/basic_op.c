@@ -122,7 +122,7 @@ Word16 sature(Word32 L_var1)
  |___________________________________________________________________________|
 */
 
-G7129_INLINE Word16 add(Word16 var1,Word16 var2)
+G729_INLINE Word16 add(Word16 var1,Word16 var2)
   {
 #if G729_ARM
 	  register Word32 L_var_out;
@@ -185,7 +185,7 @@ G7129_INLINE Word16 add(Word16 var1,Word16 var2)
  |___________________________________________________________________________|
 */
 
-G7129_INLINE Word16 sub(Word16 var1,Word16 var2)
+G729_INLINE Word16 sub(Word16 var1,Word16 var2)
   {
 #if G729_ARM
 	  register Word32 L_var_out;
@@ -424,7 +424,7 @@ Word16 shr(Word16 var1,Word16 var2)
  |___________________________________________________________________________|
 */
 
-G7129_INLINE Word16 mult(Word16 var1, Word16 var2)
+G729_INLINE Word16 mult(Word16 var1, Word16 var2)
   {
 #if G729_ARM
 	  register Word32 L_var_out;
@@ -491,7 +491,7 @@ G7129_INLINE Word16 mult(Word16 var1, Word16 var2)
  |___________________________________________________________________________|
 */
 
-G7129_INLINE Word32 L_mult(Word16 var1,Word16 var2)
+G729_INLINE Word32 L_mult(Word16 var1,Word16 var2)
   {
 #if G729_ARM
 	  register Word32 L_var_out;
@@ -667,7 +667,7 @@ Word16 extract_l(Word32 L_var1)
  |___________________________________________________________________________|
 */
 
-G7129_INLINE Word16 round(Word32 L_var1)
+G729_INLINE Word16 round(Word32 L_var1)
   {
 #if G729_ARM
 	  register Word32 L_var_out;
@@ -729,7 +729,7 @@ G7129_INLINE Word16 round(Word32 L_var1)
  |___________________________________________________________________________|
 */
 
-G7129_INLINE Word32 L_mac(Word32 L_var3, Word16 var1, Word16 var2)
+G729_INLINE Word32 L_mac(Word32 L_var3, Word16 var1, Word16 var2)
   {
 #if G729_ARM
 	  register Word32 L_var_out;
@@ -794,7 +794,7 @@ G7129_INLINE Word32 L_mac(Word32 L_var3, Word16 var1, Word16 var2)
  |___________________________________________________________________________|
 */
 
-G7129_INLINE Word32 L_msu(Word32 L_var3, Word16 var1, Word16 var2)
+G729_INLINE Word32 L_msu(Word32 L_var3, Word16 var1, Word16 var2)
   {
 #if G729_ARM
 	  register Word32 L_var_out;
@@ -959,7 +959,7 @@ Word32 L_msuNs(Word32 L_var3, Word16 var1, Word16 var2)
  |___________________________________________________________________________|
 */
 
-G7129_INLINE Word32 L_add(Word32 L_var1, Word32 L_var2)
+G729_INLINE Word32 L_add(Word32 L_var1, Word32 L_var2)
   {
 #if G729_ARM
 	  register Word32 L_var_out;
@@ -1022,7 +1022,7 @@ G7129_INLINE Word32 L_add(Word32 L_var1, Word32 L_var2)
  |___________________________________________________________________________|
 */
 
-G7129_INLINE Word32 L_sub(Word32 L_var1, Word32 L_var2)
+G729_INLINE Word32 L_sub(Word32 L_var1, Word32 L_var2)
   {
 #if G729_ARM
 	  register Word32 L_var_out;
@@ -2080,7 +2080,7 @@ Word16 div_s(Word16 var1, Word16 var2)
  |___________________________________________________________________________|
 */
 
-G7129_INLINE Word16 norm_l(Word32 L_var1)
+G729_INLINE Word16 norm_l(Word32 L_var1)
   {
 #if G729_ARM
 	  register Word32 var_out = 0;

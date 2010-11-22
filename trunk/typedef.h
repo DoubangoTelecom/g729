@@ -36,11 +36,11 @@ typedef int   Flag;
 
 
 #if defined(_MSC_VER)
-#	define G7129_INLINE	__forceinline
+#	define G729_INLINE	__forceinline
 #elif defined(__GNUC__) && !defined(__APPLE__)
-#	define G7129_INLINE	__inline
+#	define G729_INLINE	__inline
 #else
-#	define G7129_INLINE	
+#	define G729_INLINE	
 #endif
 
 #if ANDROID || TARGET_OS_EMBEDDED || defined(_WIN32_WCE)
