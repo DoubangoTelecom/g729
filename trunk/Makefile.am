@@ -1,4 +1,5 @@
 lib_LTLIBRARIES         = libg729b.la
+libg729b_la_CPPFLAGS = -fPIC
 
 libg729b_la_SOURCES  = \
  acelp_ca.c\
