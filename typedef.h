@@ -29,6 +29,14 @@ typedef int   Flag;
 typedef short  Word16;
 typedef long  Word32;
 typedef int   Flag;
+#elif defined(__APPLE__)
+#   if __LP64__
+    typedef signed int                      Word32;
+#   else
+    typedef signed long                     Word32;
+#   endif
+typedef  short int   Word16   ;
+typedef  short int   Flag  ;
 #else
 #error  COMPILER NOT TESTED typedef.h needs to be updated, see readme
 #endif
